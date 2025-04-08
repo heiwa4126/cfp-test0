@@ -6,7 +6,7 @@
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
 		"start": "wrangler dev",
-    "format": "biome format --write . && dprint fmt  && textlint --fix \"**/*.md\""
+		"format": "biome format --write . && dprint fmt  && textlint --fix \"**/*.md\""
 	},
 	"devDependencies": {
 		"wrangler": "^4.8.0"
