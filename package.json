@@ -1,0 +1,14 @@
+{
+	"name": "cfp-test0",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+    "format": "biome format --write . && dprint fmt  && textlint --fix \"**/*.md\""
+	},
+	"devDependencies": {
+		"wrangler": "^4.8.0"
+	}
+}
