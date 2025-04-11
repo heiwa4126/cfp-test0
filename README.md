@@ -28,7 +28,15 @@ pnpm run deploy
 
 `wrangler pages deploy` 的にやらないと...
 
-## 制限
+```sh
+# Cloudflareにcfp-test0という名前のPagesプロジェクトを作る。認証にブラウザを使う
+wrangler pages project create cfp-test0 --production-branch main
+
+
+```
+
+
+## Pages の制限
 
 Free 枠の場合
 ビルド(デプロイ)は月 500 回まで。
@@ -42,3 +50,5 @@ Free 枠の場合
 
 - [wrangler - npm](https://www.npmjs.com/package/wrangler)
 - [workerd - npm](https://www.npmjs.com/package/workerd)
+
+workerd 面白い。
