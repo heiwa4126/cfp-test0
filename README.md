@@ -14,8 +14,21 @@ pnpm create cloudflare@latest cfp-test0
 # Gitはお好みで
 cd cfp-test0
 pnpm dev  # ローカルでテスト
-pnpm run deploy # CloudFlareにデプロイ
 ```
+
+## デプロイ
+
+テンプレートから生成したプロジェクトで
+
+```sh
+pnpm run deploy
+```
+
+すると、中身は `wrangler deploy` なんで Pages でなくて Workers になってしまうので注意。
+
+`wrangler pages deploy` 的にやらないと...
+
+## 制限
 
 Free 枠の場合
 ビルド(デプロイ)は月 500 回まで。
