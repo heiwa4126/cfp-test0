@@ -26,15 +26,14 @@ pnpm run deploy
 
 すると、中身は `wrangler deploy` なんで Pages でなくて Workers になってしまうので注意。
 
-`wrangler pages deploy` 的にやらないと...
+コマンドでやるつもりなら `wrangler pages deploy` 的にやらないと...
 
-```sh
-# Cloudflareにcfp-test0という名前のPagesプロジェクトを作る。認証にブラウザを使う
-wrangler pages project create cfp-test0 --production-branch main
+いろいろやってみましたが `wrangler pages deploy` だと
+最初のデプロイ以降
+プレビューデプロイが全部 ERR_SSL_VERSION_OR_CIPHER_MISMATCH になってしまう。
 
-
-```
-
+あんまりメンテされてないんじゃないかな。GitHub 連携だと問題ない。
+どうも Cloudflare の障害らしいのでしばらく放置する。
 
 ## Pages の制限
 
