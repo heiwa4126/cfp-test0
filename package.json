@@ -3,7 +3,7 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"deploy": "wrangler deploy",
+		"deploy": "wrangler pages deploy",
 		"dev": "wrangler pages dev",
 		"start": "wrangler pages dev",
 		"format": "biome format --write . && dprint fmt  && textlint --fix \"**/*.md\""
