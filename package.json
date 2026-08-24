@@ -6,9 +6,11 @@
 		"deploy": "wrangler pages deploy",
 		"dev": "wrangler pages dev",
 		"start": "wrangler pages dev",
-		"format": "biome format --write . && dprint fmt  && textlint --fix \"**/*.md\""
+		"format": "oxfmt",
+		"lint": "oxlint",
+		"check": "oxfmt && oxlint --fix"
 	},
 	"devDependencies": {
-		"wrangler": "^4.114.0"
+		"wrangler": "^4.125.0"
 	}
 }
